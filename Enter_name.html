@@ -1,0 +1,60 @@
+<!--<!DOCTYPE html>-->
+<html>
+<head>
+<title>New student</title>
+<style>
+	header {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://i.postimg.cc/YjcJg24M/aa.jpg);
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+	.welcome-text {
+	position: absolute;
+	margin: 5% 30%;
+	text-align: center;
+}
+	.welcome-text h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 60px;
+	color: #fff;}
+	.welcome-text label{
+		text-align: center;
+		font-size: 40px;
+		color: #fff;
+	}
+	.welcome-text input{
+		text-align: center;
+		font-size: 40px;
+		color: #000;
+	}
+</style>
+  <title></title>
+</head>
+<body>
+	<header>
+<div class="welcome-text">
+
+<h1>Please enter details below</h1>
+<form action="http://localhost:5000/EnteringName" method="post">
+  <label for="fname">Full Name : </label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="rn">Roll No : </label>
+  <input type="number" id="rn" name="rn"><br><br>
+  <label for="age">Age : </label>
+  <input type="number" id="age" name="age"><br><br>
+  <label for="gender">Gender : </label>
+  <input type="text" id="gender" name="gender"><br><br>
+  <label for="height">Height : </label>
+  <input type="number" step = 0.01 id="height" name="height"><br><br>
+  <label for="weight">Weight : </label>
+  <input type="number" step = 0.01 id="weight" name="weight"><br><br>
+  <input type="submit" value="Submit">
+</form>
+</div>
+</header>
+</body>
+</html>

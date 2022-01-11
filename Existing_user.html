@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+	header {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://i.postimg.cc/YjcJg24M/aa.jpg);
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+	.welcome-text {
+	position: absolute;
+	margin: 5% 30%;
+	text-align: center;
+}
+	.welcome-text h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 60px;
+	color: #fff;}
+	.welcome-text label{
+		text-align: center;
+		font-size: 40px;
+		color: #fff;
+	}
+	.welcome-text input{
+		text-align: center;
+		font-size: 40px;
+		color: #000;
+	}
+</style>
+</head>
+<body>
+	<header>
+<div class="welcome-text">
+
+<h1>Please enter details below</h1>
+<form action="http://localhost:5000/TabletTrack" method="post">
+  <label for="rn">Roll No.:</label>
+  <input type="number" id="rn" name="rn"><br><br>
+
+  <!--<label for="date">Date of tablet taken:</label>
+  <input type="date" id="date" name="date" data-date-format="yyyy-mm-dd">-->
+
+  <label for="day">Day : </label>
+  <input type="number" id="day" name="day" min="1" max="31"><br><br>
+  <label for="month">Month : </label>
+  <input type="number" id="month" name="month" min="1" max="12"><br><br>
+  <label for="year">Year : </label>
+  <input type="number" id="year" name="year"><br><br>
+
+  <br><br><input type="submit" value="Submit"></form>
+
+</div>
+</header>
+</body>
+</html>
+
+
+
+
+
